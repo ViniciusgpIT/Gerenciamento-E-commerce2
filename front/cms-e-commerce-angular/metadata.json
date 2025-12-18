@@ -1,0 +1,5 @@
+{
+  "name": "CMS E-commerce Angular",
+  "description": "Uma aplicação CMS para gerenciar produtos, categorias e lojas, construída com Angular, Signals e Tailwind CSS.",
+  "requestFramePermissions": []
+}
