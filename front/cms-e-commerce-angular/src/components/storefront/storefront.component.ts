@@ -38,11 +38,11 @@ import { ProductWithDetails } from '../../models/product.model';
                 <div class="mb-4">
                   @if(product.promotionalPrice) {
                     <div class="flex items-baseline gap-2">
-                      <span class="text-2xl font-bold text-indigo-600">{{ product.promotionalPrice | currency:'BRL' }}</span>
-                      <span class="text-md text-gray-500 line-through">{{ product.price | currency:'BRL' }}</span>
+                      <span class="text-2xl font-bold text-indigo-600">{{ product.promotionalPrice | currency }}</span>
+                      <span class="text-md text-gray-500 line-through">{{ product.price | currency }}</span>
                     </div>
                   } @else {
-                    <span class="text-2xl font-bold text-gray-800">{{ product.price | currency:'BRL' }}</span>
+                    <span class="text-2xl font-bold text-gray-800">{{ product.price | currency }}</span>
                   }
                 </div>
     

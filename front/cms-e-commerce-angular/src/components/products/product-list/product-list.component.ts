@@ -65,11 +65,11 @@ import { CategoryService } from '../../../services/category.service';
                 <td class="px-6 py-4">
                     @if(product.promotionalPrice) {
                         <div class="flex flex-col">
-                            <span class="font-bold text-indigo-600">{{ product.promotionalPrice | currency:'BRL' }}</span>
-                            <span class="text-xs text-gray-500 line-through">{{ product.price | currency:'BRL' }}</span>
+                            <span class="font-bold text-indigo-600">{{ product.promotionalPrice | currency }}</span>
+                            <span class="text-xs text-gray-500 line-through">{{ product.price | currency }}</span>
                         </div>
                     } @else {
-                        <span>{{ product.price | currency:'BRL' }}</span>
+                        <span>{{ product.price | currency }}</span>
                     }
                 </td>
                 <td class="px-6 py-4 font-bold" [class.text-red-600]="product.totalStock === 0" [class.text-orange-600]="product.totalStock > 0 && product.totalStock <= 10">

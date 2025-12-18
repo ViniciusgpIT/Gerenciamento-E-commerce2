@@ -52,11 +52,11 @@ import { CategoryService } from '../../services/category.service';
             <div class="mb-6">
               @if(product.promotionalPrice) {
                 <div class="flex items-baseline gap-3">
-                  <span class="text-4xl font-bold text-indigo-600">{{ product.promotionalPrice | currency:'BRL' }}</span>
-                  <span class="text-xl text-gray-500 line-through">{{ product.price | currency:'BRL' }}</span>
+                  <span class="text-4xl font-bold text-indigo-600">{{ product.promotionalPrice | currency }}</span>
+                  <span class="text-xl text-gray-500 line-through">{{ product.price | currency }}</span>
                 </div>
               } @else {
-                <span class="text-4xl font-bold text-gray-900">{{ product.price | currency:'BRL' }}</span>
+                <span class="text-4xl font-bold text-gray-900">{{ product.price | currency }}</span>
               }
             </div>
     
